@@ -42,7 +42,7 @@ index deb52c185705c4b4186c7bae02f2a827620c20ca..d1a8bfb29817d2b73689713b4d5f04d7
 +		// Attempt to detect vectorization
 +		try {
 +			SIMDDetection.isEnabled = SIMDDetection.canEnable(PufferfishLogger.LOGGER);
-+			SIMDDetection.versionLimited = SIMDDetection.getJavaVersion() != 17 && SIMDDetection.getJavaVersion() != 18 && SIMDDetection.getJavaVersion() != 19;
++			SIMDDetection.versionLimited = SIMDDetection.getJavaVersion() != 17 && SIMDDetection.getJavaVersion() != 18 && SIMDDetection.getJavaVersion() != 19 && SIMDDetection.getJavaVersion() != 21;
 +		} catch (NoClassDefFoundError | Exception ignored) {
 +			ignored.printStackTrace();
 +		}
